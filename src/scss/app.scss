@@ -1,0 +1,25 @@
+@import "variables";
+
+:root {
+  --darktheme: #{$white};
+  --lighttheme: #{$blue};
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Montserrat", sans-serif;
+  a:hover {
+    color: #000;
+  }
+  a:link {
+    color: #000;
+  }
+  a:visited {
+    color: #000;
+  }
+  outline: none;
+}

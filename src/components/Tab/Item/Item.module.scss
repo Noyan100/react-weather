@@ -1,0 +1,41 @@
+.item {
+  background: #4793ff33;
+  flex-basis: 100%;
+  height: 200px;
+  padding: 10px 10px 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .day {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+  }
+  .date {
+    color: #939cb0;
+    font-size: 14px;
+  }
+  .icon {
+    width: 48px;
+    height: 48px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  .temperatureDay {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .temperatureNight {
+    font-size: 13px;
+    color: #939cb0;
+    margin-top: -6px;
+  }
+  .info {
+    font-size: 13px;
+    color: #939cb0;
+  }
+}

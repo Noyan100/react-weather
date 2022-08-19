@@ -1,8 +1,23 @@
-@import "variables";
+html[data-theme="dark"] {
+  --componentbg: #4f4f4f;
+  --textcolor: #fff;
+  --tabbg: #4f4f4f;
+  --tabitembg: #2e3035;
+  --boxshadow: #b4b4b440;
+  --transition: background-color 0.7s;
+  background-color: #0d1117;
+  transition: background-color 0.7s;
+}
 
-:root {
-  --darktheme: #{$white};
-  --lighttheme: #{$blue};
+html[data-theme="light"] {
+  --componentbg: #fff;
+  --textcolor: #000;
+  --tabbg: #fff;
+  --tabitembg: #4793ff33;
+  --boxshadow: #b4b4b440;
+  --transition: background-color 0.7s;
+  background-color: #fff;
+  transition: background-color 0.7s;
 }
 
 * {

@@ -4,6 +4,9 @@ import sun from '../../assets/sun.svg';
 
 type TToday = {};
 
+const url =
+  'https://api.openweathermap.org/data/2.5/weather?q=dallas&appid=670678e438297434cd3e1258af43ecd2';
+
 const Today: React.FC<TToday> = ({}) => {
   return (
     <div className={styles.container}>

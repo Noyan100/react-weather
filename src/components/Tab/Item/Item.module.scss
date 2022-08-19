@@ -1,5 +1,6 @@
 .item {
-  background: #4793ff33;
+  transition: var(--transition);
+  background: var(--tabitembg);
   flex-basis: 100%;
   height: 200px;
   padding: 10px 10px 15px;
@@ -10,7 +11,7 @@
   .day {
     font-size: 18px;
     font-weight: 500;
-    color: #000;
+    color: var(--textcolor);
   }
   .date {
     color: #939cb0;
@@ -28,6 +29,7 @@
   .temperatureDay {
     font-size: 18px;
     font-weight: 500;
+    color: var(--textcolor);
   }
   .temperatureNight {
     font-size: 13px;

@@ -2,17 +2,21 @@
   display: flex;
   flex-direction: column;
   gap: 7px;
+  transition: var(--transition);
   .tab {
     display: flex;
     gap: 15px;
     .tabItem,
     .tabItemActive {
+      box-shadow: 2px 5px 25px -3px var(--boxshadow);
       padding: 7px 20px 9px;
       border-radius: 5px;
       cursor: pointer;
     }
     .tabItem {
-      color: #000;
+      color: var(--textcolor);
+      background-color: var(--tabbg);
+      transition: var(--transition);
       &:last-child {
         margin-left: auto;
       }
@@ -26,5 +30,8 @@
     padding: 20px;
     display: flex;
     gap: 20px;
+    background-color: var(--tabbg);
+    box-shadow: 2px 5px 25px -3px var(--boxshadow);
+    transition: var(--transition);
   }
 }

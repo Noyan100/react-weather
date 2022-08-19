@@ -30,7 +30,7 @@ const customStyles = {
 const Header: React.FC<THeader> = ({}) => {
   const { theme, setTheme } = useTheme();
   const handleThemeClick = () => {
-    setTheme('dark');
+    theme === 'dark' ? setTheme('light') : setTheme('dark');
   };
   return (
     <div className={styles.container}>

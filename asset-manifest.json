@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/react-gh-pages/static/css/main.b8f1c30c.css",
+    "main.js": "/react-gh-pages/static/js/main.95ee794f.js",
+    "static/media/cloud-image.svg": "/react-gh-pages/static/media/cloud-image.7490775078994e012e0c.svg",
+    "static/media/precipitation.svg": "/react-gh-pages/static/media/precipitation.c136ce17ce58166d6cc28d54569c8710.svg",
+    "static/media/temperature.svg": "/react-gh-pages/static/media/temperature.acac2a4630bbfb6ad283da9fadccf2a0.svg",
+    "static/media/logo.svg": "/react-gh-pages/static/media/logo.4691a7f9c266393059aff560c8dae905.svg",
+    "static/media/wind.svg": "/react-gh-pages/static/media/wind.df7df8140f2f32af72900782d54d3690.svg",
+    "static/media/pressure.svg": "/react-gh-pages/static/media/pressure.4f629d6a8e8b6310ddb400c6d3cb30be.svg",
+    "index.html": "/react-gh-pages/index.html",
+    "static/media/switch.svg": "/react-gh-pages/static/media/switch.95c2fb12817b1140e2d3adc2e48d7718.svg",
+    "main.b8f1c30c.css.map": "/react-gh-pages/static/css/main.b8f1c30c.css.map",
+    "main.95ee794f.js.map": "/react-gh-pages/static/js/main.95ee794f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b8f1c30c.css",
+    "static/js/main.95ee794f.js"
+  ]
+}

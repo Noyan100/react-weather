@@ -6,7 +6,7 @@
   padding: 50px 30px;
   border-radius: 20px;
   position: relative;
-  min-width: 750px;
+  width: 100%;
   background-color: var(--componentbg);
   box-shadow: 2px 5px 25px -3px var(--boxshadow);
   transition: var(--transition);
@@ -36,6 +36,9 @@
     .info {
       font-size: 14px;
       color: var(--textcolor);
+      &::first-letter {
+        text-transform: capitalize;
+      }
     }
   }
   &::after {

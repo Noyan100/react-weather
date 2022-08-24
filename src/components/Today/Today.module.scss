@@ -46,3 +46,27 @@
     }
   }
 }
+
+@media (max-width: 1024px) {
+  .container {
+    align-items: center;
+    .blockOne {
+      gap: 40px;
+      .textBlock {
+        .temperature {
+          font-size: 60px;
+        }
+        .today {
+          font-size: 30px;
+        }
+      }
+      .img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+    .blockTwo {
+      align-items: center;
+    }
+  }
+}

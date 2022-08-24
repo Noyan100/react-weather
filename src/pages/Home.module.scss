@@ -6,4 +6,9 @@
     gap: 50px;
     margin-bottom: 50px;
   }
+  @media (max-width: 1024px) {
+    .wrapper {
+      flex-direction: column;
+    }
+  }
 }

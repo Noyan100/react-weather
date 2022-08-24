@@ -39,5 +39,13 @@
   .info {
     font-size: 13px;
     color: #939cb0;
+    &::first-letter {
+      text-transform: capitalize;
+    }
   }
 }
+
+@media (max-width: 768px) {
+  .item {
+  }
+} ;

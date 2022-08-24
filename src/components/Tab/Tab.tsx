@@ -1,82 +1,42 @@
 import React from 'react';
 import styles from './Tab.module.scss';
-import cloudy from '../../assets/mainly-cloudy.svg';
 import Item from './Item/Item';
 
-type TTab = {};
+import { TWeather } from '../../redux/thunks/fetchNextWeather';
 
-const items = [
-  {
-    day: 'Сегодня',
-    date: '28 авг',
-    icon: cloudy,
-    temperatureDay: '+18°',
-    temperatureNight: '+15°',
-    info: 'Безоблачно',
-  },
-  {
-    day: 'Сегодня',
-    date: '28 авг',
-    icon: cloudy,
-    temperatureDay: '+18°',
-    temperatureNight: '+15°',
-    info: 'Безоблачно',
-  },
-  {
-    day: 'Сегодня',
-    date: '28 авг',
-    icon: cloudy,
-    temperatureDay: '+18°',
-    temperatureNight: '+15°',
-    info: 'Безоблачно',
-  },
-  {
-    day: 'Сегодня',
-    date: '28 авг',
-    icon: cloudy,
-    temperatureDay: '+18°',
-    temperatureNight: '+15°',
-    info: 'Безоблачно',
-  },
-  {
-    day: 'Сегодня',
-    date: '28 авг',
-    icon: cloudy,
-    temperatureDay: '+18°',
-    temperatureNight: '+15°',
-    info: 'Безоблачно',
-  },
-  {
-    day: 'Сегодня',
-    date: '28 авг',
-    icon: cloudy,
-    temperatureDay: '+18°',
-    temperatureNight: '+15°',
-    info: 'Безоблачно',
-  },
-  {
-    day: 'Сегодня',
-    date: '28 авг',
-    icon: cloudy,
-    temperatureDay: '+18°',
-    temperatureNight: '+15°',
-    info: 'Безоблачно',
-  },
-];
-
-const Tab: React.FC<TTab> = ({}) => {
+const Tab: React.FC<TWeather> = ({ list }) => {
+  const days = () => {
+    const daysList = [
+      'Воскресенье',
+      'Понедельник',
+      'Вторник',
+      'Среда',
+      'Четверг',
+      'Пятница',
+      'Суббота',
+    ];
+    let number = -1;
+    return [...new Array(11)].map(() => {
+      number >= 6 ? (number = 0) : number++;
+      return daysList[number];
+    });
+  };
+  const setDay = (index: number) => {
+    const n = new Date().getDay();
+    if (index / 8 === 1) return 'Сегодня';
+    if (index / 8 === 2) return 'Завтра';
+    return days()[index / 8 + n - 1];
+  };
   return (
     <div className={styles.container}>
-      <ul className={styles.tab}>
-        <li className={styles.tabItemActive}>На неделю</li>
-        <li className={styles.tabItem}>На месяц</li>
-        <li className={styles.tabItem}>На 10 дней</li>
-        <li className={styles.tabItem}>Отменить</li>
-      </ul>
       <div className={styles.items}>
-        {items.map((obj, index) => (
-          <Item {...{ ...obj }} key={index} />
-        ))}
+        {list.map((obj, index) =>
+          (index + 1) % 8 === 0 ? (
+            <Item key={index} list={list.slice(index - 7, index + 1)} day={setDay(index + 1)} />
+          ) : (
+            ''
+          ),
+        )}
       </div>
     </div>
   );

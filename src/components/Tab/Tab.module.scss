@@ -27,11 +27,18 @@
     }
   }
   .items {
+    border-radius: 20px;
     padding: 20px;
     display: flex;
     gap: 20px;
     background-color: var(--tabbg);
     box-shadow: 2px 5px 25px -3px var(--boxshadow);
     transition: var(--transition);
+  }
+  @media (max-width: 768px) {
+    .items {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
   }
 }

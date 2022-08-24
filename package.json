@@ -1,7 +1,7 @@
 {
   "name": "react-weather",
   "version": "0.1.0",
-  "homepage": "https://Noyan100.github.io/react-weather",
+  "homepage": "http://Noyan100.github.io/react-weather",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.4",
